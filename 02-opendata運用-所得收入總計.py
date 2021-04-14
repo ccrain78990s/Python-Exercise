@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding=utf-8 -*-
 __author__ = "Chen"
-
+print("===ver2===")
 import sys
 from xml.etree import ElementTree
 import urllib.request as httplib  # 3.x
@@ -13,13 +13,6 @@ from matplotlib.font_manager import FontProperties  # 中文化
 import numpy as np
 
 ####
-##### OpenData讀取處理
-def print_node(node):
-    try:
-        print("node.text:%s" % node.text)
-    except:
-        print("node.text:null")
-
 
 try:
     # 家庭收支調查 - 所得收入者職業別平均每人"所得收入總計" 最後更新時間 2020 - 10 - 27
@@ -107,6 +100,7 @@ try:
             list.append(int(t11[x].text))
             list.append(int(t12[x].text))
             print(list)
+            """
             # 長條圖 : 單獨一年的所得高低
             fig = plt.figure(1, figsize=(20, 4))
 
@@ -120,6 +114,7 @@ try:
             plt.yticks(np.arange(0,1500000,200000))
             plt.tick_params(axis='x',labelsize=8)   #刻度大小調整
             plt.title(listYear[x]+"年")
+            """
 
 
             
