@@ -1,0 +1,42 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+    <!-- start-->
+    <category>
+      <pattern> 我需要 * </pattern>
+      <template>
+         你好,請問需要 <star/> 服務嗎?
+      </template>
+    </category>
+
+    <category>
+      <pattern>是 * </pattern>
+      <template>
+        好的，將為您顯示 <star/> 服務流程.
+      </template>
+    </category>
+
+    <category>
+      <pattern>你喜歡 * 或 * </pattern>
+      <template>
+        我更喜歡 <star index = "1"/> 勝過於 <star index = "2"/>.
+      </template>
+    </category>
+
+    <category>
+      <pattern>我是 * </pattern>
+      <template>
+         你好,<set name = "username"><star/>! 歡迎使用本系統，很高興為您服務! </set>
+      </template>
+    </category>  
+   
+    <category>
+      <pattern>謝謝</pattern>
+      <template>
+         感謝您使用本系統,<get name = "username"/> !
+          如有其他疑問，請撥打電話0800-000-000，將會有專人為您服務!
+      </template>  
+    </category>  
+ 
+
+    
+</aiml>

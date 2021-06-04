@@ -1,0 +1,62 @@
+<aiml version="1.0.1" encoding="UTF-8">
+    <!-- start-->
+    <category>
+      <pattern>你好</pattern>
+      <template>
+            <random>
+                <li>你好,歡迎使用本系統,請輸入您的大名:</li>
+                <li>你好我能為妳做什麼.請輸入您的大名:</li>
+            </random>
+      </template>
+    </category>
+
+    <category>
+      <pattern>公司地址</pattern>
+      <template>
+          我們的公司的地址為:桃園市 中壢區 XX路 XX號 XX樓 。
+      </template>
+    </category>
+    <category>
+      <pattern>公司電話</pattern>
+      <template>
+          本公司電話 : 0800 - XXX - XXX
+      </template>
+    </category>
+
+    <category>
+      <pattern>公司網址</pattern>
+      <template>
+          https://www.________.com
+      </template>
+    </category>
+
+    <category>
+      <pattern>服務時間</pattern>
+      <template>
+          本公司服務時間: 上午 9:00 ~下午 5:00
+      </template>
+    </category>
+
+    <category>
+      <pattern>服務項目</pattern>
+      <template>
+          本公司服務項目: 1.免費諮詢 2.協助代辦 3.XXX
+      </template>
+    </category>
+
+    <category>
+      <pattern> * </pattern>
+      <template>
+         你好, <set name = "username"> <star/>! </set>
+      </template>
+    </category>  
+   
+    <category>
+      <pattern>結束</pattern>
+      <template>
+         謝謝您的使用， <get name = "username"/> ! 歡迎下次再使用本服務，很高興為您服務!
+      </template>  
+    </category>
+
+    
+</aiml>
