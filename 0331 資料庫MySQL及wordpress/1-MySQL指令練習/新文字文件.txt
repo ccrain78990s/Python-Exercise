@@ -1,0 +1,14 @@
+一  找[莒光公園]資料
+SELECT * FROM `ubiketaoyuan` WHERE `sna中文場站名稱`='莒光公園'
+
+二
+SELECT * FROM `ubiketaoyuan` WHERE `sbi可借車位數`<5
+
+三
+SELECT * FROM `ubiketaoyuan` WHERE `sbi可借車位數`<10 AND `sarea中文場站區域`='中壢區'
+
+四
+SELECT DISTINCT `sarea中文場站區域` FROM `ubiketaoyuan`
+
+五*****請看老師code
+SELECT * FROM `ubiketaoyuan` WHERE `lat緯度` BETWEEN 24.9471028 AND -24.9471028 AND `lng經度`BETWEEN 121.2260725 AND -121.2260725 

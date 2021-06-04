@@ -1,0 +1,10 @@
+1.
+INSERT INTO `ubiketaoyuan` (`id`, `sna中文場站名稱`, `tot場站總停車格`, `sbi可借車位數`, `lat緯度`, `lng經度`, `bemp可還空位數`, `act場站是否暫停營運`, `sno站點代號`, `sarea中文場站區域`, `mday資料更新時間`, `ar中文地址`, `sareaen英文場站區域`, `snaen英文場站名稱`, `aren英文地址`, `datetime`) VALUES (NULL, '皮卡丘', '', '', '', '', '', '', '', '', '', '', '', '', '', '2021-03-31 05:13:33.000000');
+2.
+SELECT * FROM `ubiketaoyuan` WHERE `sna中文場站名稱`='皮卡丘'
+3.
+UPDATE `ubiketaoyuan` SET `sna中文場站名稱`='柯南' WHERE `sna中文場站名稱`='皮卡丘'
+4.
+SELECT * FROM `ubiketaoyuan` WHERE `sna中文場站名稱`='柯南'
+5.
+DELETE FROM `ubiketaoyuan` WHERE `sna中文場站名稱`='柯南'
