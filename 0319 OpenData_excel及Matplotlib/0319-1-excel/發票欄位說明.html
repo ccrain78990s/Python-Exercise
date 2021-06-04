@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<!-- saved from url=(0093)https://sip.einvoice.nat.gov.tw/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/Mjs=/ -->
+<html lang="zh-Hant-TW"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+  
+  <meta name="_csrf" content="01344a54-50b7-4070-9595-e08cd88838a7">
+  <meta name="_csrf_header" content="X-CSRF-TOKEN">
+  
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <title>歡迎蒞臨 財政部電子發票 智慧好生活 服務平台</title>
+
+
+  <link rel="shortcut icon" href="https://sip.einvoice.nat.gov.tw/ods-main/images/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="./發票欄位說明_files/external_theme.css">
+  <script async="" src="./發票欄位說明_files/analytics.js.下載"></script><script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-60884031-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+    <script src="/ods-main/assets/html5shiv/3.7.0/html5shiv.min.js"></script>
+    <script src="/ods-main/assets/respond/1.4.2/dest/respond.matchmedia.addListener.min.js"></script>
+    <script src="/ods-main/assets/respond/1.4.2/dest/respond.min.js"></script>
+  <![endif]-->
+  
+<!-- Windows is not work in IE8/IE9 http://msdn.microsoft.com/en-us/library/ie/gg589530(v=vs.85).aspx -->
+<!--[if lte IE 9]>
+    <script src="/ods-main/scripts/common/console-api-shiv.js"></script>
+  <![endif]-->
+  
+
+
+<link rel="shortcut icon" href="https://sip.einvoice.nat.gov.tw/ods-main/images/favicon.ico">
+
+<link rel="stylesheet" type="text/css" href="./發票欄位說明_files/common.css"><link rel="stylesheet" type="text/css" href="./發票欄位說明_files/ng-grid.css"><link rel="stylesheet" type="text/css" href="./發票欄位說明_files/ng-cloak.css"><link rel="stylesheet" type="text/css" href="./發票欄位說明_files/theme.css"><link rel="stylesheet" type="text/css" href="./發票欄位說明_files/modal.css">
+
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+    <script src="/ods-main/assets/html5shiv/3.7.0/html5shiv.min.js"></script>
+    <script src="/ods-main/assets/respond/1.4.2/dest/respond.matchmedia.addListener.min.js"></script>
+    <script src="/ods-main/assets/respond/1.4.2/dest/respond.min.js"></script>
+    <script src="/ods-main/scripts/common/angular-directives-shiv.js"></script>
+    <script src="/ods-main/scripts/common/ie8-javascript-shiv.js"></script>
+    
+  <![endif]-->
+  
+<!-- windows is not work in IE8/IE9 http://msdn.microsoft.com/en-us/library/ie/gg589530(v=vs.85).aspx -->
+<!--[if lte IE 9]>
+    <script src="/ods-main/scripts/common/console-api-shiv.js"></script>
+  <![endif]-->
+  
+
+
+	<meta content="觀光景點消費熱度分析(統計102年1月至105年4月)" property="og:title">
+	<meta content="參考景點冷熱程度，依喜好選擇前往景點；營業人可參考客源區域，研擬目標客群策略。
+資料範圍為過去三年加一年(目前年度)的B2C電子發票資料及營業稅申報資料。
+計算定義說明：
+1. 熱度指標
+&lt;div style=&quot;margin-left:1em&quot;&gt;每日以村里為單位4個欄位(電子發票張數、金額、營業稅銷售額、發票張數)，計算當日4個欄位的各自排名，再切分為100等分，做為當日熱度指標。&lt;/div&gt;2. 客源區域
+&lt;div style=&quot;margin-left:1em&quot;&gt;每月以鄉鎮市區，每張載具加總電子發票張數，張數最多的鄉鎮市區，做為客源區域，行業別限制在零售業(471、472)、住宿服務業(55)、餐飲業(56)，未包含網購業者行業別。&lt;/div&gt;" property="og:description">
+	
+	<link href="./發票欄位說明_files/star.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="./發票欄位說明_files/css_login.css"><link rel="stylesheet" type="text/css" href="./發票欄位說明_files/css_m.css">
+</head>
+<body class="body-common body-bg-9AD9EF body-font-size-m " style="">
+		<div>
+    <div><div class="header">
+    <div class="header-bg" style="background-image:url(&#39;/ods-main/images/external/163f7eeb65900000c46ef2596b57af2b.jpg&#39;)">
+      <div class="header-top">
+        <a title="連結到 首頁" href="https://sip.einvoice.nat.gov.tw/sip-main/"><div class="header-top-left"></div></a>
+        <div class="header-top-right">
+          <div class="header-menu">
+            <a accesskey="U" class="accesskey" href="https://sip.einvoice.nat.gov.tw/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/Mjs=/#guiding-brick-up" id="guiding-brick-up" tabindex="2" title="上方快速連結區">:::</a>
+            <a class="top" title="連結到 首頁" href="https://sip.einvoice.nat.gov.tw/sip-main/">回首頁</a><span class="top">│</span>
+            <a class="top" title="連結到 網站導覽" href="https://sip.einvoice.nat.gov.tw/sip-main/sip105e/">網站導覽</a><span class="top">│</span>
+            <a class="top" title="連結到 聯絡我們" href="https://sip.einvoice.nat.gov.tw/sip-main/sip114e/">聯絡我們</a><span class="top">│</span>
+            <a class="top" title="連結到 常見問題" href="https://sip.einvoice.nat.gov.tw/sip-main/sip106e/">常見問題</a><span class="top">│</span>
+            <a class="top" title="連結到 RSS訂閱" href="https://sip.einvoice.nat.gov.tw/sip-main/sip108e/">RSS訂閱</a><span class="top">│</span>
+            <a class="top" title="連結到 行動裝置" href="https://sip.einvoice.nat.gov.tw/sip-main/mobile/">行動裝置</a>
+          </div>
+          <div class="header-info-font">
+            <span><img align="absmiddle" alt="24H" height="18" width="33" src="./發票欄位說明_files/b_24h.png">客服專線</span>
+            <span class="telephone">0800-521-988</span>
+            <span>　　　　　　字級大小：</span>
+            
+              <a href="javascript:chtExtUtil.changeFontSize(&#39;s&#39;);" title="小" class="font-size-s">小</a> 
+              <a href="javascript:chtExtUtil.changeFontSize(&#39;m&#39;);" title="中" class="font-size-m active">中</a> 
+              <a href="javascript:chtExtUtil.changeFontSize(&#39;b&#39;);" title="大" class="font-size-b">大</a>
+            
+            
+          </div>
+        </div>
+      </div>
+      <div class="header-body">
+        <div class="header-search" style="width:420px">
+          <div class="header-search-form" style="width:420px">
+            <form id="sipSiteSearchForm" method="post" name="sipSiteSearchForm" action="https://sip.einvoice.nat.gov.tw/sip-main/sip112e/search">
+              <div class="header-search-col-label" style="line-height: 17px;"><label for="keyword">全文檢索</label></div>
+              <div class="header-search-col">
+                <input class="input" id="keyword" name="keyword" role="SITE_SEARCH_PAGE_HIDDEN" size="28" type="text" value="">
+                <input name="page" role="SITE_SEARCH_PAGE_HIDDEN" type="hidden" value="0">
+                <input name="size" role="SITE_SEARCH_PAGE_HIDDEN" type="hidden" value="10">
+              </div>
+              <div class="header-search-col"><input class="button btn-cmn" title="搜 尋" type="submit" value="搜 尋"></div>
+            <input type="hidden" name="_csrf" value="01344a54-50b7-4070-9595-e08cd88838a7"></form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="crumb-row">
+      <span class="crumb">
+        <a accesskey="C" class="accesskey" href="https://sip.einvoice.nat.gov.tw/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/Mjs=/#guiding-brick-content" id="guiding-brick-content" title="中央主要內容區">:::</a>
+        <a class="crumb" title="連結到 首頁" href="https://sip.einvoice.nat.gov.tw/sip-main/">首頁</a>
+      </span>
+      <span class="crumb">
+
+    
+      <!-- span> &gt; </span>
+      <a class="crumb" th:href="@{'/ODS301E/'}" target="_self" th:text="主題群組列表查詢"></a -->
+      
+        <span> &gt; </span>
+       <a class="crumb" href="https://sip.einvoice.nat.gov.tw/ods-main/ODS302E/" target="_self" title="連結到 主題列表查詢">主題列表查詢</a>
+        <!-- input type="text" class="form-control" id="groupName" name="groupName" th:value="${node.odsPackage.get(0).getBreadLink()}" / -->
+      
+
+      <!-- span> &gt; </span>
+      <a class="crumb" th:href="aaa" target="_self" th:text="AAA"></a>
+      <input type="text" class="form-control" id="groupName" name="groupName" th:value="${data.groupId}" />
+      <input type="text" class="form-control" id="groupName2" name="groupName2" th:value="${#httpServletRequest.requestURI}" / -->
+    
+    
+    <span> &gt; </span>
+    <a class="crumb" title="目前位置" href="https://sip.einvoice.nat.gov.tw/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/Mjs=/" target="_self">目前位置</a>
+  </span>      
+      
+    </div>
+  </div></div>  
+    <a class="top" title="回到首頁" href="https://sip.einvoice.nat.gov.tw/sip-main/mobile/"></a>
+    
+    
+    
+    <iframe longdesc=" " title="SIP131I" align="center" frameborder="0" height="0px" scrolling="no" width="0px" src="./發票欄位說明_files/saved_resource.html">
+    </iframe>
+  </div>
+		<input id="packageId" name="packageId" type="hidden" value="691C0280-CEFB-488F-9E71-6AA4F39A41CD"> 
+    <input id="packageVer" name="packageVer" type="hidden" value="1">
+	<input id="packageCookie" type="hidden" value="true">
+		<div class="container forIe8">
+			<div class="row">
+				<div class="panel-title">
+					<span class="title">●主題詳細資訊</span>				
+					<div style="float:right;  margin-right:10px;margin-top:2px;">
+	    <label for="publicVers">瀏覽先前版本</label>
+    	<select id="publicVers" onchange="window.location = this.options[this.selectedIndex].value;">
+			  <option value="#">請選擇</option>
+	      <option value="/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/27/Mjs=/">觀光景點消費熱度分析(統計106年1月至109年12月)</option>
+	      <option value="/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/26/Mjs=/">觀光景點消費熱度分析(統計106年1月至109年8月)</option>
+	      <option value="/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/25/Mjs=/">觀光景點消費熱度分析(統計106年1月至109年6月)</option>
+	      <option value="/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/23/Mjs=/">觀光景點消費熱度分析(統計106年1月至109年4月)</option>
+	      <option value="/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/22/Mjs=/">觀光景點消費熱度分析(統計106年1月至109年2月)</option>
+	      <option value="/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/21/Mjs=/">觀光景點消費熱度分析(統計105年1月至108年12月)</option>
+	      <option value="/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/20/Mjs=/">觀光景點消費熱度分析(統計105年1月至108年10月)</option>
+	      <option value="/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/19/Mjs=/">觀光景點消費熱度分析(統計105年1月至108年8月)</option>
+	      <option value="/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/18/Mjs=/">觀光景點消費熱度分析(統計105年1月至108年6月)</option>
+	      <option value="/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/17/Mjs=/">觀光景點消費熱度分析(統計105年1月至108年4月)</option>
+	      <option value="/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/16/Mjs=/">觀光景點消費熱度分析(統計105年1月至108年2月)</option>
+	      <option value="/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/15/Mjs=/">觀光景點消費熱度分析(統計104年1月至107年12月)</option>
+	      <option value="/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/14/Mjs=/">觀光景點消費熱度分析(統計102年1月至107年10月)</option>
+	      <option value="/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/13/Mjs=/">觀光景點消費熱度分析(統計102年1月至107年8月)</option>
+	      <option value="/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/12/Mjs=/">觀光景點消費熱度分析(統計102年1月至107年6月)</option>
+	      <option value="/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/11/Mjs=/">觀光景點消費熱度分析(統計102年1月至107年4月)</option>
+	      <option value="/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/10/Mjs=/">觀光景點消費熱度分析(統計102年1月至107年2月)</option>
+	      <option value="/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/9/Mjs=/">觀光景點消費熱度分析(統計102年1月至106年12月)</option>
+	      <option value="/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/8/Mjs=/">觀光景點消費熱度分析(統計102年1月至106年10月)</option>
+	      <option value="/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/7/Mjs=/">觀光景點消費熱度分析(統計102年1月至106年8月)</option>
+	      <option value="/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/6/Mjs=/">觀光景點消費熱度分析(統計102年1月至106年7月)</option>
+	      <option value="/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/5/Mjs=/">觀光景點消費熱度分析(統計102年1月至106年4月)</option>
+	      <option value="/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/4/Mjs=/">觀光景點消費熱度分析(統計102年1月至106年2月)</option>
+	      <option value="/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/3/Mjs=/">觀光景點消費熱度分析(統計102年1月至105年12月)</option>
+	      <option value="/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/2/Mjs=/">觀光景點消費熱度分析(統計102年1月至105年6月)</option>
+	      <option value="/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/Mjs=/">觀光景點消費熱度分析(統計102年1月至105年4月)</option>
+	    </select>		
+    
+</div>
+				</div>
+			</div>
+	
+    <div class="row" style="background-color:#fff">
+        <!--div class="col-md-offset-9 col-md-3">   
+            <a accesskey="B" href="javascript:void(0);" onclick="history.back();" onkeypress="history.back();" class="btn btn-primary btn-xs pull-right" role="button">BACK</a>
+        </div-->
+
+		<div class="btn-group" role="group" style="float: left; margin-left:25px;">
+		    <button class="btn btn-success" id="api" onclick="showPkgInfoApiDetail();" onkeypress="showPkgInfoApiDetail();" title="主題資訊API" type="button"><span class="glyphicon glyphicon-log-in"></span> 主題資訊API</button>
+			<button class="btn btn-success" id="doUserInfo" title="使用說明" type="button"><span class="glyphicon glyphicon-question-sign"></span> 使用說明</button>
+			<!--button title="下載電子檔" class="btn btn-success" id="doPrint" type="button"><span class="glyphicon glyphicon-download-alt"></span> 下載電子檔</button-->
+			<button class="btn btn-success bootstro" data-bootstro-content="提供主題Tableau資料分析檔案下載，可使用Tableau Reader進行互動分析。" data-bootstro-step="0" data-original-title="" id="doAnalysizing" title="下載分析檔" type="button"><span class="glyphicon glyphicon-stats"></span> 下載分析檔</button>
+			<button class="btn btn-success bootstro" data-bootstro-content="提供主題內的所有資料集打包下載，節省單獨下載時間。" data-bootstro-step="2" id="doPackDatasets" title="下載資料集" type="button"><span class="glyphicon glyphicon-cloud-download"></span> 下載資料集</button>	
+			
+			
+			<button class="btn btn-success" id="doOrder" type="button" onclick="window.location.href=&#39;/ods-main/ODS305E/rest/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/Mjs2OTFDMDI4MC1DRUZCLTQ4OEYtOUU3MS02QUE0RjM5QTQxQ0QsMTs=/&#39;" onkeypress="window.location.href=&#39;/ods-main/ODS305E/rest/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/Mjs2OTFDMDI4MC1DRUZCLTQ4OEYtOUU3MS02QUE0RjM5QTQxQ0QsMTs=/&#39;" data-hasqtip="1" oldtitle="主題訂閱，此功能需進行登入，若尚未登入將導向電子發票整合服務平台。" title="">
+			 <span class="glyphicon glyphicon-tag"></span>主題訂閱
+			</button>
+		
+
+			<button class="btn btn-success" id="doRating" type="button" data-hasqtip="0" oldtitle="我要評分，此功能需進行登入，若尚未登入將導向電子發票整合服務平台。" title=""><span class="glyphicon glyphicon-thumbs-up"></span> 我要評分</button>
+		</div>
+		<div>
+			<div style="float: left; margin-top:5px;">
+				
+		
+		
+		
+		
+		
+		<img alt="統計顆星，平均4.678260869565217分。" src="./發票欄位說明_files/one_full_star.png" title="統計顆星，平均4.678260869565217分。">
+		<img alt="統計顆星，平均4.678260869565217分。" src="./發票欄位說明_files/one_full_star.png" title="統計顆星，平均4.678260869565217分。">
+		<img alt="統計顆星，平均4.678260869565217分。" src="./發票欄位說明_files/one_full_star.png" title="統計顆星，平均4.678260869565217分。">
+		<img alt="統計顆星，平均4.678260869565217分。" src="./發票欄位說明_files/one_full_star.png" title="統計顆星，平均4.678260869565217分。">
+		<img alt="統計顆星，平均4.678260869565217分。" src="./發票欄位說明_files/one_half_star.png" title="統計顆星，平均4.678260869565217分。">
+		
+		
+		
+		
+		
+		
+		
+		<span>(115)</span>			
+    
+
+			</div>
+			<div style="float: right; margin-right:25px; margin-top:5px;">	        
+				<a href="https://sip.einvoice.nat.gov.tw/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/Mjs=/#"><img align="absmiddle" alt="文件下載" border="0" class="share-icon" onclick="showPackageDocument()" title="文件下載" src="./發票欄位說明_files/icon_24_d.png"></a>
+				<a href="https://sip.einvoice.nat.gov.tw/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/Mjs=/#"><img align="absmiddle" alt="下載電子檔" border="0" class="share-icon" onclick="doPrint();" onkeypress="doPrint();" title="下載電子檔" src="./發票欄位說明_files/pdf09.png"></a>　
+				<a href="https://sip.einvoice.nat.gov.tw/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/Mjs=/#"><img align="absmiddle" alt="facebook分享" border="0" class="share-icon" onclick="shareSocial(&#39;facebook&#39;);" onkeypress="shareSocial(&#39;facebook&#39;);" title="facebook分享" src="./發票欄位說明_files/icon_24_f.png"></a>
+				<a href="https://sip.einvoice.nat.gov.tw/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/Mjs=/#"><img align="absmiddle" alt="google+分享" border="0" class="share-icon" onclick="shareSocial(&#39;google&#39;);" onkeypress="shareSocial(&#39;google&#39;);" title="google+分享" src="./發票欄位說明_files/icon_24_g.png"></a>
+				<a href="https://sip.einvoice.nat.gov.tw/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/Mjs=/#"><img align="texttop" alt="twitter分享" border="0" class="share-icon" onclick="shareSocial(&#39;twitter&#39;);" onkeypress="shareSocial(&#39;twitter&#39;);" title="twitter分享" src="./發票欄位說明_files/icon_24_t.png"></a>
+			</div>
+		</div>
+
+		<div class="css_table">
+			<div class="css_tr" style="float: right;">
+				<div class="css_td">			 </div>
+			</div>
+		</div>
+
+		<div class="container container-sm-height" style="width: 98%;">
+			<div class="col-12 col-sm-12 col-lg-12 col-sm-height">
+				<div class="panel panel-primary">
+					<div class="panel-heading clearfix" style="text-align:center;">
+						<h4><span>觀光景點消費熱度分析(統計102年1月至105年4月)</span>　<a href="https://sip.einvoice.nat.gov.tw/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/Mjs=/#"><img align="absmiddle" alt="導覽小幫手" border="0" class="beat" height="24px" onclick="bootstroStart();" onkeypress="bootstroStart();" title="導覽小幫手" width="24px" src="./發票欄位說明_files/help01.png"></a></h4>
+					</div>
+					<div class="panel-body">
+						<div style="float:left;">
+							<span>參考景點冷熱程度，依喜好選擇前往景點；營業人可參考客源區域，研擬目標客群策略。<br>資料範圍為過去三年加一年(目前年度)的B2C電子發票資料及營業稅申報資料。<br>計算定義說明：<br>1. 熱度指標<br><div style="margin-left:1em">每日以村里為單位4個欄位(電子發票張數、金額、營業稅銷售額、發票張數)，計算當日4個欄位的各自排名，再切分為100等分，做為當日熱度指標。</div>2. 客源區域<br><div style="margin-left:1em">每月以鄉鎮市區，每張載具加總電子發票張數，張數最多的鄉鎮市區，做為客源區域，行業別限制在零售業(471、472)、住宿服務業(55)、餐飲業(56)，未包含網購業者行業別。</div></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<noscript>
+		<center>
+			<div class="css_table table table-bordered">
+				<div class="css_tr">
+					<div class="css_td">
+			          說明
+			            <ul style="list-style-type:Decimal">
+				          <li>主題介紹部分提供使用者瀏覽統計分析結果，其相對應之資料集，依序置於下方供下載運用。</li>
+				          <li>主題之互動分析檔案，可於本頁上方之『下載分析檔』取得twbx檔，使用Tableau Reader進行互動分析。</li>
+			          </ul>
+			        </div>
+				</div>
+			</div>
+		</center>
+	</noscript>
+								
+	<div class="container container-sm-height" style="width:98%">
+		<div class="col-12 col-sm-12 col-lg-12 col-sm-height">  	     			
+			<div class="panel panel-info">
+				<div class="panel-heading clearfix">
+					
+					<div class="resource-button" style="float:right;">
+						
+						
+												
+						
+					</div>
+				</div>
+				<div class="panel-body">
+					<p style="text-align:left;">聲明<br>*以下資料為其他機關開放在政府資料開放平台之資料，本分析主題不負責該資料開放及資料釐正，請洽原開放資料單位：<br> <br>1. 景點 - 觀光資訊資料庫<br>　資料所屬單位為交通部觀光局，資料網址為http://data.gov.tw/node/7777<br>2. 每月氣象-局屬地面測站資料<br>　資料所屬單位為交通部中央氣象局，資料網址為http://data.gov.tw/node/9207<br></p>
+					
+				
+					
+					
+					
+				</div>
+			</div>
+		</div>	  
+    </div>
+								
+	<div class="container container-sm-height" style="width:98%">
+		<div class="col-12 col-sm-12 col-lg-12 col-sm-height">  	     			
+			<div class="panel panel-info">
+				<div class="panel-heading clearfix">
+					<span>觀光景點消費熱度分析-景點排名變化分析-說明</span>
+					<div class="resource-button" style="float:right;">
+						<a class="btn btn-default btn-sm" target="_blank" title="圖形下載" href="https://sip.einvoice.nat.gov.tw/ods-main/ODS308E/download/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/CCA71EC9-CDCE-4B57-82E7-77ED6CB91535/2/?fileType=png">圖形下載</a>
+						
+												
+						<a class="btn btn-default btn-sm" target="_blank" title="資料瀏覽" href="https://sip.einvoice.nat.gov.tw/ods-main/ODS308E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/CCA71EC9-CDCE-4B57-82E7-77ED6CB91535/2/1/0/">資料瀏覽</a>
+					</div>
+				</div>
+				<div class="panel-body">
+					
+					<p style="text-align:left;">提供近四個年度的景點消費熱度排名的變化情形，可選擇熱門排名或冷門排名、消費熱度計算來源為電子發票或營業稅、消費熱度計算種類為銷售金額或發票張數，並提供村里地區相關景點名稱供參考。<br><br>此儀表版圖表之分析資料來源可參考本頁下方資料集：<br>　1)電子發票消費熱度指標</p>
+				
+					
+					<a class="btn btn-default btn-sm" style="width:100%" target="_blank" href="https://sip.einvoice.nat.gov.tw/ods-main/ODS308E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/CCA71EC9-CDCE-4B57-82E7-77ED6CB91535/2/1/0/">
+						<img alt="觀光景點消費熱度分析-景點排名變化分析-說明，詳細請參考本圖上方說明。" class="img-polaroid" longdesc="觀光景點消費熱度分析-景點排名變化分析-說明，詳細請參考本圖上方說明。" title="觀光景點消費熱度分析-景點排名變化分析-說明，詳細請參考本圖上方說明。" width="100%" src="./發票欄位說明_files/CCA71EC9-CDCE-4B57-82E7-77ED6CB91535-2.png">
+					</a>
+					
+				</div>
+			</div>
+		</div>	  
+    </div>
+								
+	<div class="container container-sm-height" style="width:98%">
+		<div class="col-12 col-sm-12 col-lg-12 col-sm-height">  	     			
+			<div class="panel panel-info">
+				<div class="panel-heading clearfix">
+					<span>觀光景點消費熱度分析-景點成長衰退分析-說明</span>
+					<div class="resource-button" style="float:right;">
+						<a class="btn btn-default btn-sm" target="_blank" title="圖形下載" href="https://sip.einvoice.nat.gov.tw/ods-main/ODS308E/download/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/D6176D3D-74F5-4F1F-BB4E-AF8AF1EAC196/2/?fileType=png">圖形下載</a>
+						
+												
+						<a class="btn btn-default btn-sm" target="_blank" title="資料瀏覽" href="https://sip.einvoice.nat.gov.tw/ods-main/ODS308E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/D6176D3D-74F5-4F1F-BB4E-AF8AF1EAC196/2/2/0/">資料瀏覽</a>
+					</div>
+				</div>
+				<div class="panel-body">
+					
+					<p style="text-align:left;">提供最新年度與往前一年的景點熱度指標成長或衰退差距幅度排名、於地圖上呈現該村裡的景點地圖、四個年度的景點熱度指標變化趨勢及使用載具消費的主要客源縣市、鄉鎮市區的比例。<br><br>此儀表版圖表之分析資料來源可參考本頁下方資料集：<br>　1)電子發票消費熱度指標<br>　2)電子發票載具客源地區統計</p>
+				
+					
+					<a class="btn btn-default btn-sm" style="width:100%" target="_blank" href="https://sip.einvoice.nat.gov.tw/ods-main/ODS308E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/D6176D3D-74F5-4F1F-BB4E-AF8AF1EAC196/2/2/0/">
+						<img alt="觀光景點消費熱度分析-景點成長衰退分析-說明，詳細請參考本圖上方說明。" class="img-polaroid" longdesc="觀光景點消費熱度分析-景點成長衰退分析-說明，詳細請參考本圖上方說明。" title="觀光景點消費熱度分析-景點成長衰退分析-說明，詳細請參考本圖上方說明。" width="100%" src="./發票欄位說明_files/D6176D3D-74F5-4F1F-BB4E-AF8AF1EAC196-2.png">
+					</a>
+					
+				</div>
+			</div>
+		</div>	  
+    </div>
+								
+	<div class="container container-sm-height" style="width:98%">
+		<div class="col-12 col-sm-12 col-lg-12 col-sm-height">  	     			
+			<div class="panel panel-info">
+				<div class="panel-heading clearfix">
+					<span>觀光景點消費熱度分析-載具客生活圈移動分析-說明</span>
+					<div class="resource-button" style="float:right;">
+						<a class="btn btn-default btn-sm" target="_blank" title="圖形下載" href="https://sip.einvoice.nat.gov.tw/ods-main/ODS308E/download/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/A290FE6B-06D8-49B6-B59A-09E056F6582D/2/?fileType=png">圖形下載</a>
+						
+												
+						<a class="btn btn-default btn-sm" target="_blank" title="資料瀏覽" href="https://sip.einvoice.nat.gov.tw/ods-main/ODS308E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/A290FE6B-06D8-49B6-B59A-09E056F6582D/2/3/0/">資料瀏覽</a>
+					</div>
+				</div>
+				<div class="panel-body">
+					
+					<p style="text-align:left;">提供持載具消費電子發票者在過去四年，每日在消費生活圈的移動情形，可以了解各縣市的消費者在平日、假日的移動變化或各縣市載具消費者最多人次前往哪些縣市。</p>
+				
+					
+					<a class="btn btn-default btn-sm" style="width:100%" target="_blank" href="https://sip.einvoice.nat.gov.tw/ods-main/ODS308E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/A290FE6B-06D8-49B6-B59A-09E056F6582D/2/3/0/">
+						<img alt="觀光景點消費熱度分析-載具客生活圈移動分析-說明，詳細請參考本圖上方說明。" class="img-polaroid" longdesc="觀光景點消費熱度分析-載具客生活圈移動分析-說明，詳細請參考本圖上方說明。" title="觀光景點消費熱度分析-載具客生活圈移動分析-說明，詳細請參考本圖上方說明。" width="100%" src="./發票欄位說明_files/A290FE6B-06D8-49B6-B59A-09E056F6582D-2.png">
+					</a>
+					
+				</div>
+			</div>
+		</div>	  
+    </div>
+								
+	<div class="container container-sm-height" style="width:98%">
+		<div class="col-12 col-sm-12 col-lg-12 col-sm-height">  	     			
+			<div class="panel panel-info">
+				<div class="panel-heading clearfix">
+					<span>觀光景點消費熱度分析-景點客源與熱度趨勢分析-說明</span>
+					<div class="resource-button" style="float:right;">
+						<a class="btn btn-default btn-sm" target="_blank" title="圖形下載" href="https://sip.einvoice.nat.gov.tw/ods-main/ODS308E/download/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/4AEF2D4C-24A5-4631-9C30-ED7FF740D800/2/?fileType=png">圖形下載</a>
+						
+												
+						<a class="btn btn-default btn-sm" target="_blank" title="資料瀏覽" href="https://sip.einvoice.nat.gov.tw/ods-main/ODS308E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/4AEF2D4C-24A5-4631-9C30-ED7FF740D800/2/4/0/">資料瀏覽</a>
+					</div>
+				</div>
+				<div class="panel-body">
+					
+					<p style="text-align:left;">提供使用者選擇特定日期觀察全國地圖各縣市的消費熱度指標並於地圖標示各景點位置、景點說明及景點圖片。並了解所選擇鄉鎮市區使用載具消費者的主要客源縣市、鄉鎮市區的比例，並呈現單一村里景點四個年度的消費熱度指標及平均溫度等變化趨勢。<br><br>此儀表版圖表之分析資料來源可參考本頁下方資料集：<br>　1)電子發票消費熱度指標<br>　2)電子發票載具客源地區統計</p>
+				
+					
+					<a class="btn btn-default btn-sm" style="width:100%" target="_blank" href="https://sip.einvoice.nat.gov.tw/ods-main/ODS308E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/4AEF2D4C-24A5-4631-9C30-ED7FF740D800/2/4/0/">
+						<img alt="觀光景點消費熱度分析-景點客源與熱度趨勢分析-說明，詳細請參考本圖上方說明。" class="img-polaroid" longdesc="觀光景點消費熱度分析-景點客源與熱度趨勢分析-說明，詳細請參考本圖上方說明。" title="觀光景點消費熱度分析-景點客源與熱度趨勢分析-說明，詳細請參考本圖上方說明。" width="100%" src="./發票欄位說明_files/4AEF2D4C-24A5-4631-9C30-ED7FF740D800-2.png">
+					</a>
+					
+				</div>
+			</div>
+		</div>	  
+    </div>
+								
+	<div class="container container-sm-height" style="width:98%">
+		<div class="col-12 col-sm-12 col-lg-12 col-sm-height">  	     			
+			<div class="panel panel-info">
+				<div class="panel-heading clearfix">
+					<span>觀光景點消費熱度分析-電子發票消費熱度指標-資料集</span>
+					<div class="resource-button" style="float:right;">
+						
+						<a class="btn btn-default btn-sm bootstro" data-bootstro-content="提供此資料集CSV檔案下載，可進一步進行資料統計及分析。" data-bootstro-step="1" target="_blank" title="CSV下載" href="https://sip.einvoice.nat.gov.tw/ods-main/ODS308E/download/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/1124193D-09F5-4711-AB9A-01848E3B88E4/1/?fileType=csv">CSV下載</a>
+												
+						<a class="btn btn-default btn-sm" target="_blank" title="資料瀏覽" href="https://sip.einvoice.nat.gov.tw/ods-main/ODS308E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/1124193D-09F5-4711-AB9A-01848E3B88E4/1/5/0/">資料瀏覽</a>
+					</div>
+				</div>
+				<div class="panel-body">
+					
+					<p style="text-align:left;">以全年各縣市、鄉鎮市區、村里為單位計算電子發票消費發票張數、金額或雙月(或每月)營業稅申報銷售額、申報發票字軌起迄估算發票張數，並轉換為張數指標、銷售額指標等不透漏營業人營業資訊細節等方式呈現區域的消費熱度。<br><br>資料集欄位：<br>年度、縣市、縣市代碼、鄉鎮市區、鄉鎮市區代碼、村里、村里代碼、主行業別、主行業別代碼、消費熱度計算來源、張數指標、銷售額指標。<br><br>消費熱度計算來源定義：<br>表示該筆指標計算來源是電子發票(B2C開立發票明細)、營業稅申報資料，因電子發票在不同區域的普及程度不同，此時即可轉換計算來源為營業稅申報資料。<br><br>張數指標定義：<br>以村里為單位的2個欄位(電子發票張數、BLM申報銷項發票字軌起訖號彙整張數)，計算2個欄位的各自排名，再切分為100等分，換算為0~100的數值，做為2項張數指標。<br><br>銷售額指標定義：<br>以村里為單位的2個欄位(電子發票金額、營業稅銷售額)，計算2個欄位的各自排名，再切分為100等分換算，為0~100的數值，做為2項金額指標。</p>
+				
+					
+					
+					<a class="btn btn-default btn-sm" style="width:100%" target="_blank" title="觀光景點消費熱度分析-電子發票消費熱度指標-資料集，詳細請參考本圖上方說明。" href="https://sip.einvoice.nat.gov.tw/ods-main/ODS308E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/1124193D-09F5-4711-AB9A-01848E3B88E4/1/5/0/">
+						<div style="overflow:auto; width:100%; max-width:60em;max-height:55em">
+							<div class="css_table_dataset">
+							  <div class="css_th_dataset">年度</div>
+							  <div class="css_th_dataset">縣市</div>
+							  <div class="css_th_dataset">縣市代碼</div>
+							  <div class="css_th_dataset">鄉鎮市區</div>
+							  <div class="css_th_dataset">鄉鎮市區代碼</div>
+							  <div class="css_th_dataset">村里</div>
+							  <div class="css_th_dataset">村里代碼</div>
+							  <div class="css_th_dataset">主行業別</div>
+							  <div class="css_th_dataset">主行業別代碼</div>
+							  <div class="css_th_dataset">消費熱度計算來源</div>
+							  <div class="css_th_dataset">張數指標</div>
+							  <div class="css_th_dataset">銷售額指標</div>
+							  <div class="css_tr">
+								  <div class="css_td_dataset">2016</div>
+								  <div class="css_td_dataset">臺北市</div>
+								  <div class="css_td_dataset">A</div>
+								  <div class="css_td_dataset">松山區</div>
+								  <div class="css_td_dataset">01</div>
+								  <div class="css_td_dataset">中崙里</div>
+								  <div class="css_td_dataset">01</div>
+								  <div class="css_td_dataset">零售業</div>
+								  <div class="css_td_dataset">47</div>
+								  <div class="css_td_dataset">營業稅</div>
+								  <div class="css_td_dataset">93</div>
+								  <div class="css_td_dataset">93</div>
+							  </div>
+							  <div class="css_tr">
+								  <div class="css_td_dataset">2016</div>
+								  <div class="css_td_dataset">臺北市</div>
+								  <div class="css_td_dataset">A</div>
+								  <div class="css_td_dataset">松山區</div>
+								  <div class="css_td_dataset">01</div>
+								  <div class="css_td_dataset">自強里</div>
+								  <div class="css_td_dataset">03</div>
+								  <div class="css_td_dataset">零售業</div>
+								  <div class="css_td_dataset">47</div>
+								  <div class="css_td_dataset">營業稅</div>
+								  <div class="css_td_dataset">59</div>
+								  <div class="css_td_dataset">50</div>
+							  </div>
+							  <div class="css_tr">
+								  <div class="css_td_dataset">2016</div>
+								  <div class="css_td_dataset">臺北市</div>
+								  <div class="css_td_dataset">A</div>
+								  <div class="css_td_dataset">松山區</div>
+								  <div class="css_td_dataset">01</div>
+								  <div class="css_td_dataset">鵬程里</div>
+								  <div class="css_td_dataset">04</div>
+								  <div class="css_td_dataset">零售業</div>
+								  <div class="css_td_dataset">47</div>
+								  <div class="css_td_dataset">營業稅</div>
+								  <div class="css_td_dataset">70</div>
+								  <div class="css_td_dataset">71</div>
+							  </div>
+							  <div class="css_tr">
+								  <div class="css_td_dataset">2016</div>
+								  <div class="css_td_dataset">臺北市</div>
+								  <div class="css_td_dataset">A</div>
+								  <div class="css_td_dataset">松山區</div>
+								  <div class="css_td_dataset">01</div>
+								  <div class="css_td_dataset">東榮里</div>
+								  <div class="css_td_dataset">05</div>
+								  <div class="css_td_dataset">零售業</div>
+								  <div class="css_td_dataset">47</div>
+								  <div class="css_td_dataset">營業稅</div>
+								  <div class="css_td_dataset">58</div>
+								  <div class="css_td_dataset">77</div>
+							  </div>
+							  <div class="css_tr">
+								  <div class="css_td_dataset">2016</div>
+								  <div class="css_td_dataset">臺北市</div>
+								  <div class="css_td_dataset">A</div>
+								  <div class="css_td_dataset">松山區</div>
+								  <div class="css_td_dataset">01</div>
+								  <div class="css_td_dataset">介壽里</div>
+								  <div class="css_td_dataset">06</div>
+								  <div class="css_td_dataset">零售業</div>
+								  <div class="css_td_dataset">47</div>
+								  <div class="css_td_dataset">營業稅</div>
+								  <div class="css_td_dataset">73</div>
+								  <div class="css_td_dataset">79</div>
+							  </div>
+							  <div class="css_tr">
+								  <div class="css_td_dataset">2016</div>
+								  <div class="css_td_dataset">臺北市</div>
+								  <div class="css_td_dataset">A</div>
+								  <div class="css_td_dataset">松山區</div>
+								  <div class="css_td_dataset">01</div>
+								  <div class="css_td_dataset">東勢里</div>
+								  <div class="css_td_dataset">07</div>
+								  <div class="css_td_dataset">零售業</div>
+								  <div class="css_td_dataset">47</div>
+								  <div class="css_td_dataset">營業稅</div>
+								  <div class="css_td_dataset">87</div>
+								  <div class="css_td_dataset">95</div>
+							  </div>
+							  <div class="css_tr">
+								  <div class="css_td_dataset">2016</div>
+								  <div class="css_td_dataset">臺北市</div>
+								  <div class="css_td_dataset">A</div>
+								  <div class="css_td_dataset">松山區</div>
+								  <div class="css_td_dataset">01</div>
+								  <div class="css_td_dataset">東光里</div>
+								  <div class="css_td_dataset">08</div>
+								  <div class="css_td_dataset">零售業</div>
+								  <div class="css_td_dataset">47</div>
+								  <div class="css_td_dataset">營業稅</div>
+								  <div class="css_td_dataset">90</div>
+								  <div class="css_td_dataset">79</div>
+							  </div>
+							  <div class="css_tr">
+								  <div class="css_td_dataset">2016</div>
+								  <div class="css_td_dataset">臺北市</div>
+								  <div class="css_td_dataset">A</div>
+								  <div class="css_td_dataset">松山區</div>
+								  <div class="css_td_dataset">01</div>
+								  <div class="css_td_dataset">中正里</div>
+								  <div class="css_td_dataset">09</div>
+								  <div class="css_td_dataset">零售業</div>
+								  <div class="css_td_dataset">47</div>
+								  <div class="css_td_dataset">營業稅</div>
+								  <div class="css_td_dataset">99</div>
+								  <div class="css_td_dataset">99</div>
+							  </div>
+							  <div class="css_tr">
+								  <div class="css_td_dataset">2016</div>
+								  <div class="css_td_dataset">臺北市</div>
+								  <div class="css_td_dataset">A</div>
+								  <div class="css_td_dataset">松山區</div>
+								  <div class="css_td_dataset">01</div>
+								  <div class="css_td_dataset">復盛里</div>
+								  <div class="css_td_dataset">10</div>
+								  <div class="css_td_dataset">零售業</div>
+								  <div class="css_td_dataset">47</div>
+								  <div class="css_td_dataset">營業稅</div>
+								  <div class="css_td_dataset">67</div>
+								  <div class="css_td_dataset">94</div>
+							  </div>
+							  <div class="css_tr">
+								  <div class="css_td_dataset">2016</div>
+								  <div class="css_td_dataset">臺北市</div>
+								  <div class="css_td_dataset">A</div>
+								  <div class="css_td_dataset">松山區</div>
+								  <div class="css_td_dataset">01</div>
+								  <div class="css_td_dataset">復勢里</div>
+								  <div class="css_td_dataset">11</div>
+								  <div class="css_td_dataset">零售業</div>
+								  <div class="css_td_dataset">47</div>
+								  <div class="css_td_dataset">營業稅</div>
+								  <div class="css_td_dataset">87</div>
+								  <div class="css_td_dataset">86</div>
+							  </div>
+							</div>
+							<div class="css_table_dataset2">
+							  <div class="css_tr">
+								<div class="css_th_dataset2" colspan="11">註:資料僅列出前十筆，欲看全部資料請使用資料瀏覽</div>
+							  </div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>	  
+    </div>
+								
+	<div class="container container-sm-height" style="width:98%">
+		<div class="col-12 col-sm-12 col-lg-12 col-sm-height">  	     			
+			<div class="panel panel-info">
+				<div class="panel-heading clearfix">
+					<span>觀光景點消費熱度分析-電子發票載具客源地區統計-資料集</span>
+					<div class="resource-button" style="float:right;">
+						
+						
+						<a class="btn btn-default btn-sm" target="_blank" title="CSV下載" href="https://sip.einvoice.nat.gov.tw/ods-main/ODS308E/download/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/48544764-8D2F-4A71-B9E1-4C16AA5B2797/1/?fileType=csv">CSV下載</a>						
+						<a class="btn btn-default btn-sm" target="_blank" title="資料瀏覽" href="https://sip.einvoice.nat.gov.tw/ods-main/ODS308E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/48544764-8D2F-4A71-B9E1-4C16AA5B2797/1/6/0/">資料瀏覽</a>
+					</div>
+				</div>
+				<div class="panel-body">
+					
+					<p style="text-align:left;">以年度統計各載具單位消費最多電子發票張數的區域作為該載具的客源區域，客源區域維度可分為縣市、鄉鎮市區兩個層級，可由客源區域欄位挑選。<br><br>資料集欄位：<br>年度、縣市、縣市代碼、鄉鎮市區、鄉鎮市區代碼、主行業別、主行業別代碼、外來生活圈、客源區域維度、客源縣市、客源縣市代碼、客源鄉鎮市區、客源鄉鎮市區代碼、消費金額、載具人次。<br><br>外來生活圈欄位定義：<br>若某載具在2016年索取50張電子發票，在台北市信義區消費30張，在新北市永和區消費12張，在高雄市左營區消費8張，則該載具在2016年的30張消費資料會註記消費地點最多張的去地區為客源縣市、鄉鎮市區，即台北市信義區(因為載具的持有者實際生活在哪裡，本平台並無任何相關資料，因此以此種方法進行推估)。<br>因此，台北市信義區的消費資料會註記外來生活圈註記為N，在新北市永和區、高雄市左營區的消費資料會註記外來生活圈為Y。</p>
+				
+					
+					
+					<a class="btn btn-default btn-sm" style="width:100%" target="_blank" title="觀光景點消費熱度分析-電子發票載具客源地區統計-資料集，詳細請參考本圖上方說明。" href="https://sip.einvoice.nat.gov.tw/ods-main/ODS308E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/48544764-8D2F-4A71-B9E1-4C16AA5B2797/1/6/0/">
+						<div style="overflow:auto; width:100%; max-width:60em;max-height:55em">
+							<div class="css_table_dataset">
+							  <div class="css_th_dataset">年度</div>
+							  <div class="css_th_dataset">縣市</div>
+							  <div class="css_th_dataset">縣市代碼</div>
+							  <div class="css_th_dataset">鄉鎮市區</div>
+							  <div class="css_th_dataset">鄉鎮市區代碼</div>
+							  <div class="css_th_dataset">主行業別</div>
+							  <div class="css_th_dataset">主行業別代碼</div>
+							  <div class="css_th_dataset">外來生活圈</div>
+							  <div class="css_th_dataset">客源區域維度</div>
+							  <div class="css_th_dataset">客源縣市</div>
+							  <div class="css_th_dataset">客源縣市代碼</div>
+							  <div class="css_th_dataset">客源鄉鎮市區</div>
+							  <div class="css_th_dataset">客源鄉鎮市區代碼</div>
+							  <div class="css_th_dataset">消費金額</div>
+							  <div class="css_th_dataset">載具人次</div>
+							  <div class="css_tr">
+								  <div class="css_td_dataset">2016</div>
+								  <div class="css_td_dataset">臺北市</div>
+								  <div class="css_td_dataset">A</div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset">零售業</div>
+								  <div class="css_td_dataset">47</div>
+								  <div class="css_td_dataset">移動到外縣市</div>
+								  <div class="css_td_dataset">縣市</div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset">377449658</div>
+								  <div class="css_td_dataset">1456620</div>
+							  </div>
+							  <div class="css_tr">
+								  <div class="css_td_dataset">2016</div>
+								  <div class="css_td_dataset">臺北市</div>
+								  <div class="css_td_dataset">A</div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset">零售業</div>
+								  <div class="css_td_dataset">47</div>
+								  <div class="css_td_dataset">留在生活圈</div>
+								  <div class="css_td_dataset">縣市</div>
+								  <div class="css_td_dataset">臺北市</div>
+								  <div class="css_td_dataset">A</div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset">18456072</div>
+								  <div class="css_td_dataset">2136398</div>
+							  </div>
+							  <div class="css_tr">
+								  <div class="css_td_dataset">2016</div>
+								  <div class="css_td_dataset">臺北市</div>
+								  <div class="css_td_dataset">A</div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset">零售業</div>
+								  <div class="css_td_dataset">47</div>
+								  <div class="css_td_dataset">移動到外縣市</div>
+								  <div class="css_td_dataset">縣市</div>
+								  <div class="css_td_dataset">臺中市</div>
+								  <div class="css_td_dataset">B</div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset">115538</div>
+								  <div class="css_td_dataset">41655</div>
+							  </div>
+							  <div class="css_tr">
+								  <div class="css_td_dataset">2016</div>
+								  <div class="css_td_dataset">臺北市</div>
+								  <div class="css_td_dataset">A</div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset">零售業</div>
+								  <div class="css_td_dataset">47</div>
+								  <div class="css_td_dataset">移動到外縣市</div>
+								  <div class="css_td_dataset">縣市</div>
+								  <div class="css_td_dataset">基隆市</div>
+								  <div class="css_td_dataset">C</div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset">71935</div>
+								  <div class="css_td_dataset">13868</div>
+							  </div>
+							  <div class="css_tr">
+								  <div class="css_td_dataset">2016</div>
+								  <div class="css_td_dataset">臺北市</div>
+								  <div class="css_td_dataset">A</div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset">零售業</div>
+								  <div class="css_td_dataset">47</div>
+								  <div class="css_td_dataset">移動到外縣市</div>
+								  <div class="css_td_dataset">縣市</div>
+								  <div class="css_td_dataset">臺南市</div>
+								  <div class="css_td_dataset">D</div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset">40406</div>
+								  <div class="css_td_dataset">15372</div>
+							  </div>
+							  <div class="css_tr">
+								  <div class="css_td_dataset">2016</div>
+								  <div class="css_td_dataset">臺北市</div>
+								  <div class="css_td_dataset">A</div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset">零售業</div>
+								  <div class="css_td_dataset">47</div>
+								  <div class="css_td_dataset">移動到外縣市</div>
+								  <div class="css_td_dataset">縣市</div>
+								  <div class="css_td_dataset">高雄市</div>
+								  <div class="css_td_dataset">E</div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset">50551</div>
+								  <div class="css_td_dataset">17695</div>
+							  </div>
+							  <div class="css_tr">
+								  <div class="css_td_dataset">2016</div>
+								  <div class="css_td_dataset">臺北市</div>
+								  <div class="css_td_dataset">A</div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset">零售業</div>
+								  <div class="css_td_dataset">47</div>
+								  <div class="css_td_dataset">移動到外縣市</div>
+								  <div class="css_td_dataset">縣市</div>
+								  <div class="css_td_dataset">新北市</div>
+								  <div class="css_td_dataset">F</div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset">2363147</div>
+								  <div class="css_td_dataset">249430</div>
+							  </div>
+							  <div class="css_tr">
+								  <div class="css_td_dataset">2016</div>
+								  <div class="css_td_dataset">臺北市</div>
+								  <div class="css_td_dataset">A</div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset">零售業</div>
+								  <div class="css_td_dataset">47</div>
+								  <div class="css_td_dataset">移動到外縣市</div>
+								  <div class="css_td_dataset">縣市</div>
+								  <div class="css_td_dataset">宜蘭縣</div>
+								  <div class="css_td_dataset">G</div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset">27786</div>
+								  <div class="css_td_dataset">7980</div>
+							  </div>
+							  <div class="css_tr">
+								  <div class="css_td_dataset">2016</div>
+								  <div class="css_td_dataset">臺北市</div>
+								  <div class="css_td_dataset">A</div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset">零售業</div>
+								  <div class="css_td_dataset">47</div>
+								  <div class="css_td_dataset">移動到外縣市</div>
+								  <div class="css_td_dataset">縣市</div>
+								  <div class="css_td_dataset">桃園市</div>
+								  <div class="css_td_dataset">H</div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset">274425</div>
+								  <div class="css_td_dataset">71202</div>
+							  </div>
+							  <div class="css_tr">
+								  <div class="css_td_dataset">2016</div>
+								  <div class="css_td_dataset">臺北市</div>
+								  <div class="css_td_dataset">A</div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset">零售業</div>
+								  <div class="css_td_dataset">47</div>
+								  <div class="css_td_dataset">移動到外縣市</div>
+								  <div class="css_td_dataset">縣市</div>
+								  <div class="css_td_dataset">嘉義市</div>
+								  <div class="css_td_dataset">I</div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset"></div>
+								  <div class="css_td_dataset">6096</div>
+								  <div class="css_td_dataset">2427</div>
+							  </div>
+							</div>
+							<div class="css_table_dataset2">
+							  <div class="css_tr">
+								<div class="css_th_dataset2" colspan="11">註:資料僅列出前十筆，欲看全部資料請使用資料瀏覽</div>
+							  </div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>	  
+    </div>
+								
+	<div class="container container-sm-height" style="width:98%">
+		<div class="col-12 col-sm-12 col-lg-12 col-sm-height">  	     			
+			<div class="panel panel-info">
+				<div class="panel-heading clearfix">
+					<span>觀光景點消費熱度分析-電子發票消費熱度排名年統計-資料集</span>
+					<div class="resource-button" style="float:right;">
+						
+						
+						<a class="btn btn-default btn-sm" target="_blank" title="CSV下載" href="https://sip.einvoice.nat.gov.tw/ods-main/ODS308E/download/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/C82AFD0D-D55F-4B06-8B85-663FBCFC5B93/1/?fileType=csv">CSV下載</a>						
+						<a class="btn btn-default btn-sm" target="_blank" title="資料瀏覽" href="https://sip.einvoice.nat.gov.tw/ods-main/ODS308E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/C82AFD0D-D55F-4B06-8B85-663FBCFC5B93/1/7/0/">資料瀏覽</a>
+					</div>
+				</div>
+				<div class="panel-body">
+					
+					<p style="text-align:left;">以全年各縣市、鄉鎮市區、村里為單位計算電子發票消費發票張數、金額或雙月(或每月)營業稅申報銷售額、申報發票字軌起迄估算發票張數，並轉換為張數排名值、銷售額排名值等不透漏營業人營業資訊細節等方式呈現區域的消費排名值。<br><br>資料集欄位：年度、縣市、縣市代碼、鄉鎮市區、鄉鎮市區代碼、村里、村里代碼、主行業別、主行業別代碼、消費熱度計算來源、發票張數排名值、銷售金額排名值。</p>
+				
+					
+					
+					<a class="btn btn-default btn-sm" style="width:100%" target="_blank" title="觀光景點消費熱度分析-電子發票消費熱度排名年統計-資料集，詳細請參考本圖上方說明。" href="https://sip.einvoice.nat.gov.tw/ods-main/ODS308E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/C82AFD0D-D55F-4B06-8B85-663FBCFC5B93/1/7/0/">
+						<div style="overflow:auto; width:100%; max-width:60em;max-height:55em">
+							<div class="css_table_dataset">
+							  <div class="css_th_dataset">年度</div>
+							  <div class="css_th_dataset">縣市</div>
+							  <div class="css_th_dataset">縣市代碼</div>
+							  <div class="css_th_dataset">鄉鎮市區</div>
+							  <div class="css_th_dataset">鄉鎮市區代碼</div>
+							  <div class="css_th_dataset">村里</div>
+							  <div class="css_th_dataset">村里代碼</div>
+							  <div class="css_th_dataset">主行業別</div>
+							  <div class="css_th_dataset">主行業別代碼</div>
+							  <div class="css_th_dataset">消費熱度計算來源</div>
+							  <div class="css_th_dataset">發票張數排名值</div>
+							  <div class="css_th_dataset">銷售金額排名值</div>
+							  <div class="css_tr">
+								  <div class="css_td_dataset">2016</div>
+								  <div class="css_td_dataset">臺北市</div>
+								  <div class="css_td_dataset">A</div>
+								  <div class="css_td_dataset">松山區</div>
+								  <div class="css_td_dataset">01</div>
+								  <div class="css_td_dataset">中崙里</div>
+								  <div class="css_td_dataset">01</div>
+								  <div class="css_td_dataset">零售業</div>
+								  <div class="css_td_dataset">47</div>
+								  <div class="css_td_dataset">營業稅</div>
+								  <div class="css_td_dataset">480</div>
+								  <div class="css_td_dataset">457</div>
+							  </div>
+							  <div class="css_tr">
+								  <div class="css_td_dataset">2016</div>
+								  <div class="css_td_dataset">臺北市</div>
+								  <div class="css_td_dataset">A</div>
+								  <div class="css_td_dataset">松山區</div>
+								  <div class="css_td_dataset">01</div>
+								  <div class="css_td_dataset">自強里</div>
+								  <div class="css_td_dataset">03</div>
+								  <div class="css_td_dataset">零售業</div>
+								  <div class="css_td_dataset">47</div>
+								  <div class="css_td_dataset">營業稅</div>
+								  <div class="css_td_dataset">3081</div>
+								  <div class="css_td_dataset">3786</div>
+							  </div>
+							  <div class="css_tr">
+								  <div class="css_td_dataset">2016</div>
+								  <div class="css_td_dataset">臺北市</div>
+								  <div class="css_td_dataset">A</div>
+								  <div class="css_td_dataset">松山區</div>
+								  <div class="css_td_dataset">01</div>
+								  <div class="css_td_dataset">鵬程里</div>
+								  <div class="css_td_dataset">04</div>
+								  <div class="css_td_dataset">零售業</div>
+								  <div class="css_td_dataset">47</div>
+								  <div class="css_td_dataset">營業稅</div>
+								  <div class="css_td_dataset">2235</div>
+								  <div class="css_td_dataset">2151</div>
+							  </div>
+							  <div class="css_tr">
+								  <div class="css_td_dataset">2016</div>
+								  <div class="css_td_dataset">臺北市</div>
+								  <div class="css_td_dataset">A</div>
+								  <div class="css_td_dataset">松山區</div>
+								  <div class="css_td_dataset">01</div>
+								  <div class="css_td_dataset">東榮里</div>
+								  <div class="css_td_dataset">05</div>
+								  <div class="css_td_dataset">零售業</div>
+								  <div class="css_td_dataset">47</div>
+								  <div class="css_td_dataset">營業稅</div>
+								  <div class="css_td_dataset">3173</div>
+								  <div class="css_td_dataset">1666</div>
+							  </div>
+							  <div class="css_tr">
+								  <div class="css_td_dataset">2016</div>
+								  <div class="css_td_dataset">臺北市</div>
+								  <div class="css_td_dataset">A</div>
+								  <div class="css_td_dataset">松山區</div>
+								  <div class="css_td_dataset">01</div>
+								  <div class="css_td_dataset">介壽里</div>
+								  <div class="css_td_dataset">06</div>
+								  <div class="css_td_dataset">零售業</div>
+								  <div class="css_td_dataset">47</div>
+								  <div class="css_td_dataset">營業稅</div>
+								  <div class="css_td_dataset">1979</div>
+								  <div class="css_td_dataset">1533</div>
+							  </div>
+							  <div class="css_tr">
+								  <div class="css_td_dataset">2016</div>
+								  <div class="css_td_dataset">臺北市</div>
+								  <div class="css_td_dataset">A</div>
+								  <div class="css_td_dataset">松山區</div>
+								  <div class="css_td_dataset">01</div>
+								  <div class="css_td_dataset">東勢里</div>
+								  <div class="css_td_dataset">07</div>
+								  <div class="css_td_dataset">零售業</div>
+								  <div class="css_td_dataset">47</div>
+								  <div class="css_td_dataset">營業稅</div>
+								  <div class="css_td_dataset">949</div>
+								  <div class="css_td_dataset">276</div>
+							  </div>
+							  <div class="css_tr">
+								  <div class="css_td_dataset">2016</div>
+								  <div class="css_td_dataset">臺北市</div>
+								  <div class="css_td_dataset">A</div>
+								  <div class="css_td_dataset">松山區</div>
+								  <div class="css_td_dataset">01</div>
+								  <div class="css_td_dataset">東光里</div>
+								  <div class="css_td_dataset">08</div>
+								  <div class="css_td_dataset">零售業</div>
+								  <div class="css_td_dataset">47</div>
+								  <div class="css_td_dataset">營業稅</div>
+								  <div class="css_td_dataset">693</div>
+								  <div class="css_td_dataset">1530</div>
+							  </div>
+							  <div class="css_tr">
+								  <div class="css_td_dataset">2016</div>
+								  <div class="css_td_dataset">臺北市</div>
+								  <div class="css_td_dataset">A</div>
+								  <div class="css_td_dataset">松山區</div>
+								  <div class="css_td_dataset">01</div>
+								  <div class="css_td_dataset">中正里</div>
+								  <div class="css_td_dataset">09</div>
+								  <div class="css_td_dataset">零售業</div>
+								  <div class="css_td_dataset">47</div>
+								  <div class="css_td_dataset">營業稅</div>
+								  <div class="css_td_dataset">28</div>
+								  <div class="css_td_dataset">50</div>
+							  </div>
+							  <div class="css_tr">
+								  <div class="css_td_dataset">2016</div>
+								  <div class="css_td_dataset">臺北市</div>
+								  <div class="css_td_dataset">A</div>
+								  <div class="css_td_dataset">松山區</div>
+								  <div class="css_td_dataset">01</div>
+								  <div class="css_td_dataset">復盛里</div>
+								  <div class="css_td_dataset">10</div>
+								  <div class="css_td_dataset">零售業</div>
+								  <div class="css_td_dataset">47</div>
+								  <div class="css_td_dataset">營業稅</div>
+								  <div class="css_td_dataset">2434</div>
+								  <div class="css_td_dataset">398</div>
+							  </div>
+							  <div class="css_tr">
+								  <div class="css_td_dataset">2016</div>
+								  <div class="css_td_dataset">臺北市</div>
+								  <div class="css_td_dataset">A</div>
+								  <div class="css_td_dataset">松山區</div>
+								  <div class="css_td_dataset">01</div>
+								  <div class="css_td_dataset">復勢里</div>
+								  <div class="css_td_dataset">11</div>
+								  <div class="css_td_dataset">零售業</div>
+								  <div class="css_td_dataset">47</div>
+								  <div class="css_td_dataset">營業稅</div>
+								  <div class="css_td_dataset">931</div>
+								  <div class="css_td_dataset">982</div>
+							  </div>
+							</div>
+							<div class="css_table_dataset2">
+							  <div class="css_tr">
+								<div class="css_th_dataset2" colspan="11">註:資料僅列出前十筆，欲看全部資料請使用資料瀏覽</div>
+							  </div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>	  
+    </div>
+	  
+    <div class="css_table">
+		<div class="css_tr">
+			<div class="css_td">
+				<!--span class="theme2">額外的資訊</span>-->
+				<button class="btn btn-success btn-xs" id="extraInfoBtn" onclick="$(&#39;#extraInfo&#39;).toggle();$(&#39;.servicedrop&#39;).toggleClass(&#39;glyphicon-chevron-up glyphicon-chevron-down&#39;);" title="額外的資訊" type="button">
+					額外的資訊 <span class="servicedrop glyphicon glyphicon-chevron-down"></span>
+				</button>
+			</div>
+		</div>
+    </div>
+		
+    <div class="css_table" id="extraInfo" style="display:none;">
+		<div class="css_table table table-bordered">
+			<div class="css_tr">
+				<div class="css_td">
+					分類標籤：
+					  <button class="btn btn-default btn-sm" disabled="true" style="font-family:&#39;新細明體&#39;; font-size:15px; font-weight:bold; color:#000; opacity:1;" type="button">觀光景點</button>
+					  <button class="btn btn-default btn-sm" disabled="true" style="font-family:&#39;新細明體&#39;; font-size:15px; font-weight:bold; color:#000; opacity:1;" type="button">電子發票</button>
+					  <button class="btn btn-default btn-sm" disabled="true" style="font-family:&#39;新細明體&#39;; font-size:15px; font-weight:bold; color:#000; opacity:1;" type="button">消費熱度</button>
+				</div>
+			</div>
+		</div>
+		<div class="css_tr">
+			<div class="css_th sbgBls" style="width:40%;">更新頻率</div>
+			
+			
+			<div class="css_td sbgBs" style="width:60%;">單月中旬</div>
+			
+		</div>
+		<div class="css_tr">
+			<div class="css_th sbgBl" style="width:40%;">版本更新日期</div>
+			<div class="css_td sbgB" style="width:60%;">105年09月08日</div>
+			
+			
+			
+		</div>
+    </div>
+
+<div class="col-md-offset-9 col-md-3">
+	<a accesskey="B" class="btn btn-primary btn-xs pull-right" href="javascript:void(0);" onclick="history.back();" onkeypress="history.back();" role="button" title="回上一頁">BACK</a>
+</div>
+
+  </div>
+ </div>
+
+	<form class="form-inline" id="ods307eForm" name="ods307eForm">
+	  <div style="display:table; width:93%; max-width:93%;">
+			  <div style="display:table-row;">
+				<div style="display:table-cell; padding: 1px;">
+				
+					<div class="modal fade" id="dialog">
+					  <div class="modal-dialog">
+						<strong class="choice">請點選顆星，顆星數越多代表分數越高。</strong><br><br>
+						  <!--[if !IE]><!-->
+						  <span class="star-rating">
+							  <input id="star1" name="rating" onclick="rmAttr(1);" onkeypress="rmAttr(1);" title="一顆星" type="radio" value="1"><i></i>
+							  <input id="star2" name="rating" onclick="rmAttr(2);" onkeypress="rmAttr(2);" title="二顆星" type="radio" value="2"><i></i>
+							  <input id="star3" name="rating" onclick="rmAttr(3);" onkeypress="rmAttr(3);" title="三顆星" type="radio" value="3"><i></i>
+							  <input id="star4" name="rating" onclick="rmAttr(4);" onkeypress="rmAttr(4);" title="四顆星" type="radio" value="4"><i></i>
+							  <input id="star5" name="rating" onclick="rmAttr(5);" onkeypress="rmAttr(5);" title="五顆星" type="radio" value="5"><i></i>
+							</span>
+						  <br>
+						  <!--<![endif]-->
+						  <!--[if lte IE 9]>
+						  <table>
+							<tr align="center">
+							  <td>
+							  <input id="star1" title="一顆星" type="radio" name="rating" value="1" onclick="rmAttr(1);" onkeypress="rmAttr(1);" /><i></i>
+							  </td>
+							  <td>
+							  <input id="star2" title="二顆星" type="radio" name="rating" value="2" onclick="rmAttr(2);" onkeypress="rmAttr(2);" /><i></i>
+							  </td>
+							  <td>
+							  <input id="star3" title="三顆星" type="radio" name="rating" value="3" onclick="rmAttr(3);" onkeypress="rmAttr(3);" /><i></i>
+							  </td>
+							  <td>
+							  <input id="star4" title="四顆星" type="radio" name="rating" value="4" onclick="rmAttr(4);" onkeypress="rmAttr(4);" /><i></i>
+							  </td>
+							  <td>
+							  <input id="star5" title="五顆星" type="radio" name="rating" value="5" onclick="rmAttr(5);" onkeypress="rmAttr(5);" /><i></i>
+							  </td>
+							</tr>
+							<tr align="center">
+								<td>
+								<label for="star1">一顆星</label><br />
+								<img alt="一顆星" title="一顆星" src="/ods-main/images/big_star.png" />
+								</td>
+								<td><label for="star2">二顆星</label><br />
+								<img alt="二顆星" title="二顆星" src="/ods-main/images/big_star.png" />
+								</td>
+								<td><label for="star3">三顆星</label><br />
+								<img alt="三顆星" title="三顆星" src="/ods-main/images/big_star.png" />
+								</td>
+								<td><label for="star4">四顆星</label><br />
+								<img alt="四顆星" title="四顆星" src="/ods-main/images/big_star.png" />
+								</td>
+								<td><label for="star5">五顆星</label><br />
+								<img alt="五顆星" title="五顆星" src="/ods-main/images/big_star.png" />
+								</td>
+							</tr>			    
+						  </table>        
+					<![endif]-->
+										
+					</div>
+				</div>
+	
+		  </div>
+	  </div>
+	</div>
+  </form>
+  <form class="form-inline" id="ods303eFormAnalysize" name="ods303eFormAnalysize">
+		<div class="modal fade" id="dialogAnalysize">
+		  <div class="modal-dialog" id="analysizeData">
+		  	
+	  <div>
+    	<div style="display:table; width:93%; max-width:93%; border-collapse: collapse; border: 1px solid black;">
+          <div style="display:table-row;">
+            <div style="display:table-cell; padding: 1px; font-weight: bold; border: 1px solid black;">名稱</div>
+            <div style="display:table-cell; padding: 1px; font-weight: bold; border: 1px solid black;">動作</div>
+          </div>
+          <div style="display:table-row;">
+            <div style="display:table-cell; padding: 1px; border: 1px solid black;" scope="row">觀光景點消費熱度分析</div>
+            <div style="display:table-cell; padding: 1px; border: 1px solid black;" scope="row"><a class="btn btn-success btn-xs glyphicon glyphicon-download-alt" title="TWBX下載" href="https://sip.einvoice.nat.gov.tw/ods-main/ODS308E/download/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/twbx/?fileType=twbx&amp;workbookId=O1602@ALL&amp;workbookVer=1">TWBX下載</a></div>
+          </div>
+	    </div><br>
+		<div style="display:table; width:93%; max-width:93%;">
+          <div style="display:table-row;">
+            <div style="display:table-cell; padding: 1px; font-weight: bold;">
+			    <h4>可於Tableau官方網站下載Tableau Reader，以開啟TWBX分析檔，並進行資料分析及操作。</h4>
+				<a href="http://www.tableausoftware.com/products/reader" title="連結到 Tableau官方網站">Tableau官方網站</a>
+			</div>
+          </div>
+        </div>
+	  </div>
+      
+    
+
+							
+	    </div>
+    </div>
+  </form>
+	<div>
+    <div>
+      <div class="footer">
+    <a accesskey="F" class="accesskey" href="https://sip.einvoice.nat.gov.tw/ods-main/ODS303E/691C0280-CEFB-488F-9E71-6AA4F39A41CD/1/Mjs=/#guiding-brick-footer" id="guiding-brick-footer" title="頁尾資訊區">:::</a>
+    <div class="footer-gov">
+      <a href="http://www.gov.tw/" target="_blank" title="連結到 我的e政府 (另開視窗)"><img alt="我的e政府" border="0" height="45" width="43" src="./發票欄位說明_files/logo_gov.png"></a>
+    </div>
+    <div class="footer-accessibility">
+      <a href="http://www.handicap-free.nat.gov.tw/Applications/Detail/19556?category=20150402162132" target="_blank" title="連結到 無障礙A+ (另開視窗)"><img alt="無障礙A+" border="0" height="31" width="88" src="./發票欄位說明_files/logo_accessibility_a_plus.jpg"></a>
+      <a href="https://www.facebook.com/einvoice178?ref=ts&amp;fref=ts" target="_blank" title="連結到 Facebook粉絲團 (另開視窗)"><img alt="Facebook粉絲團" border="0" height="31" width="88" src="./發票欄位說明_files/logo_fb_fans.png"></a>
+    </div>
+    <div class="footer-content">
+      瀏覽人數：<span class="copyright-red">17653822</span><br>
+      <span><p>瀏覽器建議使用IE 8.0以上版本　最佳觀看解析度1024x768</p>
+
+<p>電子發票智慧好生活平台 版權所有　Copyrights c 2014 All Rights Reserved</p>
+</span>
+    </div>
+    <div class="footer-icon-link">
+      <a class="theme" title="連結到 網站安全政策" href="https://sip.einvoice.nat.gov.tw/sip-main/info/security"><span class="icons security">&nbsp;</span>網站安全政策</a>
+    </div>
+    <div class="footer-icon-link">
+      <a class="theme" title="連結到 隱私權政策" href="https://sip.einvoice.nat.gov.tw/sip-main/info/privacy"><span class="icons privacy">&nbsp;</span>隱私權政策</a>
+    </div>
+    <div class="footer-icon-link">
+      <a class="theme" title="連結到 著作權聲明" href="https://sip.einvoice.nat.gov.tw/sip-main/info/copyright"><span class="icons copyright">&nbsp;</span>著作權聲明</a>
+    </div>
+  </div>
+      
+  <script src="./發票欄位說明_files/jquery-3.5.1.min.js.下載"></script><script src="./發票欄位說明_files/jquery-migrate-3.3.1.min.js.下載"></script><script src="./發票欄位說明_files/jquery-ui.min.js.下載"></script><script src="./發票欄位說明_files/jquery.blockUI.js.下載"></script><script src="./發票欄位說明_files/sls-jquery-ajax.js.下載"></script><script src="./發票欄位說明_files/sls-external-util.js.下載"></script>
+
+
+
+
+      
+  <script src="./發票欄位說明_files/bootstrap.js.下載"></script><script src="./發票欄位說明_files/bootbox.js.下載"></script>
+
+
+
+
+    </div>
+    
+  </div>
+	<script src="./發票欄位說明_files/bootstro.js.下載"></script><script src="./發票欄位說明_files/ods303e.js.下載"></script><script src="./發票欄位說明_files/ods303eExt.js.下載"></script><script src="./發票欄位說明_files/jquery.qtip.min.js.下載"></script>
+	<script type="text/javascript" src="./發票欄位說明_files/ods-main-common.js.下載"></script>
+	<script type="text/javascript" src="./發票欄位說明_files/sls-jquery-ajax.js(1).下載"></script>
+	<link rel="stylesheet" type="text/css" href="./發票欄位說明_files/ods_main.css"><link rel="stylesheet" type="text/css" href="./發票欄位說明_files/bootstro.css"><link rel="stylesheet" type="text/css" href="./發票欄位說明_files/jquery.qtip.min.css">
+	<noscript>
+  歡迎來到主題詳細資訊
+  </noscript>
+
+</body></html>

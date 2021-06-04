@@ -1,0 +1,68 @@
+var chtExtUtil = {
+    getContextpath: function() {
+        var pathArray = window.location.pathname.split('/');
+        var contextPath = "/";
+        if (pathArray.length > 1) {
+            return "/" +  pathArray[1];
+        } else {
+            return "/";
+        }
+    },
+    changeFontSize: function(size) {
+        if (typeof(size) == undefined) return; 
+        size = size.toLowerCase();
+        var style = "body-font-size-" + size;
+        $("body").removeClass(function (index, css) {
+            return (css.match(/\bbody-font-size-\S+/g) || []).join(' ');
+        });
+        $("body").addClass(style);
+        $(".header-info-font>a").removeClass("active");
+        $(".header-info-font>a.font-size-" + size).addClass("active");
+        
+        var headers = { "Accept" : "application/json, text/plain, */*" };
+        if ($("[name='_csrf_header']").length > 0) {
+            var csrf_header = $("[name='_csrf_header']").attr("content");
+            headers[csrf_header] = $("[name='_csrf']").attr("content");
+        }
+        $.ajax({
+            url : chtExtUtil.getContextpath() + "/fontsize/" + size,
+            type : 'post',
+            dataType : 'json',
+            contentType : 'application/json;charset=utf-8',
+            headers : headers
+        });
+    },
+    toggleFavoriteMenu: function() {
+        $(".btn-menu-favorite").toggleClass("active");
+        if ($(".menu-favorite-body").is(":visible")) {
+            $(".menu-favorite-body").slideUp("fast");
+        } else if ($(".menu-subscribe-body").is(":visible")) {
+            $(".btn-menu-subscribe").toggleClass("active");
+            $(".menu-subscribe-body").hide();
+            $(".menu-favorite-body").show();
+        } else {
+            $(".menu-subscribe-body").hide();
+            $(".menu-favorite-body").slideDown("fast");
+        }
+    },
+    toggleSubscribeMenu: function() {
+        $(".btn-menu-subscribe").toggleClass("active");
+        if ($(".menu-subscribe-body").is(":visible")) {
+            $(".menu-subscribe-body").slideUp("fast");
+        } else if ($(".menu-favorite-body").is(":visible")) {
+            $(".btn-menu-favorite").toggleClass("active");
+            $(".menu-favorite-body").hide();
+            $(".menu-subscribe-body").show();
+        } else {
+            $(".menu-favorite-body").hide();
+            $(".menu-subscribe-body").slideDown("fast");
+        }
+    },
+    searchKeyword: function(keyword) {
+        if (typeof(keyword) == undefined) return;
+        $("input[name='keyword'][role='SITE_SEARCH_PAGE_HIDDEN']").val(keyword);
+        var form = $("input[name='keyword'][role='SITE_SEARCH_PAGE_HIDDEN']").closest("form");
+        form.submit();
+    }
+};
+

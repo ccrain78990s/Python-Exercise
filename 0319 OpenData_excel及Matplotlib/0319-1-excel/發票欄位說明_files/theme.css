@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body {
+  overflow-y: scroll;
+}
+
+.form-inline .form-control {
+  margin-bottom: 4px;
+  width: auto;
+}
+
+.grid-style {
+  border: 1px solid rgb(212, 212, 212);
+}
+
+.ngHeaderSortColumn {
+  position: inherit;
+  background-color: #579fd8;
+  color: white;
+}
+
+.tableHeader {
+  background-color: #579fd8;
+  color: white;
+}
+
+.tableSelected {
+  background-color: #f5d9bf;
+}
+
+.ngRow.selected {
+  background-color: #f5d9bf;
+}
+
+.row-fluid .btn-toolbar {
+  margin: 3px;
+}
+
+.buildInfo {
+  color: #A4C7B5;
+  font-size: 13px;
+  font-weight: bold;
+}
+

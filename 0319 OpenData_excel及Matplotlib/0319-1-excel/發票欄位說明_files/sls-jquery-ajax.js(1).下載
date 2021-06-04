@@ -1,0 +1,220 @@
+if (typeof sls == 'undefined'){
+    var sls = {};
+}
+
+if (typeof sls.global == 'undefined'){
+    sls.global = {};
+}
+    
+if (typeof sls.global.blockUi == 'undefined'){
+    sls.global.blockUi = {
+        numBlockUi : 0,
+        config : {
+            baseZ : 1050,
+            css : {
+                backgroundColor : 'white',
+                color : 'navy'
+            },
+            message : (sls.environment && sls.environment.properties && sls.environment.properties.contextPath)
+                      ? '處理中，請稍候...'
+                      : '處理中，請稍候...'
+        }
+    };
+}
+
+
+var chtAjaxRest = new function(){
+    //private 
+
+    var setUrlParams = function(params, url) {
+        var urlParams = {};
+        $.each(url.split(/\W/), function (key, value) {
+          if (value === 'hasOwnProperty') {
+            //throw $resourceMinErr('badname', "hasOwnProperty is not a valid parameter name.");
+          }
+          if (!(new RegExp("^\\d+$").test(value)) && value &&
+            (new RegExp("(^|[^\\\\]):" + value + "(\\W|$)").test(url))) {
+            urlParams[value] = true;
+          }
+        });
+        url = url.replace(/\\:/g, ':');
+
+        params = params || {};
+        $.each(urlParams, function (urlParam, _){
+          val = params.hasOwnProperty(urlParam) ? params[urlParam] : "";
+          if (isDefined(val) && val !== null) {
+            encodedVal = encodeUriSegment(val);
+            url = url.replace(new RegExp(":" + urlParam + "(\\W|$)", "g"), function (match, p1) {
+              return encodedVal + p1;
+            });
+          } else {
+            url = url.replace(new RegExp("(\/?):" + urlParam + "(\\W|$)", "g"), function (match,
+                leadingSlashes, tail) {
+              if (tail.charAt(0) == '/') {
+                return tail;
+              } else {
+                return leadingSlashes + tail;
+              }
+            });
+          }
+        });
+
+        // strip trailing slashes and set the url (unless this behavior is specifically disabled)
+        if (true) {
+          url = url.replace(/\/+$/, '') || '/';
+        }
+
+        // then replace collapse `/.` if found in the last URL path segment before the query
+        // E.g. `http://url.com/id./format?q=x` becomes `http://url.com/id.format?q=x`
+        url = url.replace(/\/\.(?=\w+($|\?))/, '.');
+        // replace escaped `/\.` with `/.`
+        url = url.replace(/\/\\\./, '/.');
+        return url;
+    };
+
+    var isDefined = function(value){return typeof value !== 'undefined';}
+    /**
+     * @param data
+     *            資料
+     * @param actionParams
+     *            物件{xx:xx}，value有@則從data找對應欄位
+     * @returns {}
+     */
+    var extractParams = function(data, actionParams) {
+        var ids = {};
+        $.each(actionParams, function(key, value) {
+            if (isFunction(value)) {
+                value = value();
+            }
+            ids[key] = value && value.charAt && value.charAt(0) == '@' ? lookupDottedPath(data, value
+                    .substr(1)) : value;
+        });
+        return ids;
+    };
+
+    // Helper functions and regex to lookup a dotted path on an object
+    // stopping at undefined/null. The path must be composed of ASCII
+    // identifiers (just like $parse)
+    var MEMBER_NAME_REGEX = /^(\.[a-zA-Z_$][0-9a-zA-Z_$]*)+$/;
+
+    var isValidDottedPath = function(path) {
+        return (path != null && path !== '' && path !== 'hasOwnProperty' && MEMBER_NAME_REGEX.test('.'
+                + path));
+    };
+
+    var lookupDottedPath = function(obj, path) {
+        if (!isValidDottedPath(path)) {
+            // throw $resourceMinErr('badmember', 'Dotted member path "@{0}" is invalid.', path);
+        }
+        var keys = path.split('.');
+        for (var i = 0, ii = keys.length; i < ii && obj !== undefined; i++) {
+            var key = keys[i];
+            obj = (obj !== null) ? obj[key] : undefined;
+        }
+        return obj;
+    };
+    var isFunction = function(value) {
+        return typeof value === 'function';
+    };
+
+    /**
+     * We need our custom method because encodeURIComponent is too aggressive and doesn't follow
+     * http://www.ietf.org/rfc/rfc3986.txt with regards to the character set
+     * (pchar) allowed in path segments:
+     *    segment       = *pchar
+     *    pchar         = unreserved / pct-encoded / sub-delims / ":" / "@"
+     *    pct-encoded   = "%" HEXDIG HEXDIG
+     *    unreserved    = ALPHA / DIGIT / "-" / "." / "_" / "~"
+     *    sub-delims    = "!" / "$" / "&" / "'" / "(" / ")"
+     *                     / "*" / "+" / "," / ";" / "="
+     */
+    var encodeUriSegment = function(val) {
+      return encodeUriQuery(val, true).
+        replace(/%26/gi, '&').
+        replace(/%3D/gi, '=').
+        replace(/%2B/gi, '+');
+    };
+
+
+    /**
+     * This method is intended for encoding *key* or *value* parts of query component. We need a
+     * custom method because encodeURIComponent is too aggressive and encodes stuff that doesn't
+     * have to be encoded per http://tools.ietf.org/html/rfc3986:
+     *    query       = *( pchar / "/" / "?" )
+     *    pchar         = unreserved / pct-encoded / sub-delims / ":" / "@"
+     *    unreserved    = ALPHA / DIGIT / "-" / "." / "_" / "~"
+     *    pct-encoded   = "%" HEXDIG HEXDIG
+     *    sub-delims    = "!" / "$" / "&" / "'" / "(" / ")"
+     *                     / "*" / "+" / "," / ";" / "="
+     */
+    var encodeUriQuery = function(val, pctEncodeSpaces) {
+      return encodeURIComponent(val).
+        replace(/%40/gi, '@').
+        replace(/%3A/gi, ':').
+        replace(/%24/g, '$').
+        replace(/%2C/gi, ',').
+        replace(/%20/g, (pctEncodeSpaces ? '%20' : '+'));
+    };
+
+
+    var headers = {
+        "Accept" : "application/json, text/plain, */*"
+    };
+    
+    //加上block ui
+    var unBlockUiFunc = function() {
+        --sls.global.blockUi.numBlockUi;
+        if (sls.global.blockUi.numBlockUi <= 0) {
+            $.unblockUI();
+        }
+    };
+    $(document).ajaxStop(unBlockUiFunc);
+    var ajaxFun = function(url, type, param, formData, contentType, headers, dfr) {
+        $.blockUI(sls.global.blockUi.config);
+        sls.global.blockUi.numBlockUi++;
+        
+        var csrf_header = $("[name='_csrf_header']").attr("content");
+        headers[csrf_header] = $("[name='_csrf']").attr("content");
+        url = setUrlParams(param, url);
+        $.ajax({
+            url : url,
+            type : type,
+            data : JSON.stringify(formData),
+            dataType : 'json',
+            contentType : contentType,
+            headers : headers,
+            success : dfr.resolve,
+            error : dfr.reject
+        });
+    };
+    
+    //public 
+    return {
+        get : function(url, formData, param) {
+            var dfr = $.Deferred();
+            ajaxFun(url, "get", param, formData, 'application/json;charset=utf-8', headers, dfr);
+            return dfr.promise();
+        },
+        find : function(url, formData, param) {
+            var dfr = $.Deferred();
+            ajaxFun(url, "post", param, formData, 'application/json;charset=utf-8', headers, dfr);
+            return dfr.promise();
+        },
+        update : function(url, formData, param) {
+            var dfr = $.Deferred();
+            ajaxFun(url, "post", param, formData, 'application/json;charset=utf-8', headers, dfr);
+            return dfr.promise();
+        },
+        create : function(url, formData, param) {
+            var dfr = $.Deferred();
+            ajaxFun(url, "put", param, formData, 'application/json;charset=utf-8', headers, dfr);
+            return dfr.promise();
+        },
+        remove : function(url, formData, param) {
+            var dfr = $.Deferred();
+            ajaxFun(url, "delete", param, formData, 'application/json;charset=utf-8', headers, dfr);
+            return dfr.promise();
+        }
+    };
+};
+

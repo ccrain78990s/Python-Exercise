@@ -1,0 +1,63 @@
+.largeModal {
+    width : 1600px !important;
+    overflow : auto !important;
+    left : 50% !important;
+    margin-left:-800px !important;
+}
+
+ul.leaders {
+    overflow-x: hidden;
+    list-style: none;
+    width: 94%;
+}
+
+ul.leaders ul {
+    list-style: none;
+}
+
+ul.leaders li {
+    font-weight: bold;
+    color: #000;
+}
+
+ul.leaders li li {
+    font-weight: normal;
+    color: #444;
+}
+
+ul.leaders li li li {
+    font-weight: normal;
+    color: #888;
+}
+
+ul.leaders li li li li {
+    font-weight: normal;
+    color: #aaa;
+}
+
+ul.leaders li:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+}
+
+ul.leaders span:first-child:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content: "---------------------------------------"
+        "---------------------------------------"
+        "---------------------------------------"
+        "---------------------------------------";
+}
+
+ul.leaders span:first-child {
+    padding-right: 0.33em;
+    background: white;
+}
+
+ul.leaders span+span {
+    float: right;
+    padding-left: 0.33em;
+    background: white;
+}
